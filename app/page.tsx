@@ -92,46 +92,6 @@ const YouTubeToSheets = () => {
           <div className="flex items-center space-x-5">
             <h2 className="text-2xl text-black font-semibold mb-4">Get Channel Statistics and Save in Google Sheets</h2>
           </div>
-          <div className="mb-4">
-            <label className="block text-sm font-medium text-gray-700">Client ID</label>
-            <input
-              type="text"
-              value={clientId}
-              onChange={(e) => setClientId(e.target.value)}
-              className="mt-1 block w-full border-gray-300 text-black rounded-md shadow-sm focus:border-indigo-500 focus:ring-0 focus:outline-none sm:text-sm"
-              placeholder="Enter your Google Client ID"
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-sm font-medium text-gray-700">Client Secret</label>
-            <input
-              type="text"
-              value={clientSecret}
-              onChange={(e) => setClientSecret(e.target.value)}
-              className="mt-1 block w-full border-gray-300 rounded-md text-black shadow-sm focus:border-indigo-500 focus:ring-0 focus:outline-none sm:text-sm"
-              placeholder="Enter your Google Client Secret"
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-sm font-medium text-gray-700">Google Sheets ID</label>
-            <input
-              type="text"
-              value={googleSheetsId}
-              onChange={(e) => setGoogleSheetsId(e.target.value)}
-              className="mt-1 block w-full border-gray-300 rounded-md shadow-sm text-black focus:border-indigo-500 focus:ring-0 focus:outline-none sm:text-sm"
-              placeholder="Enter your Google Sheets ID"
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-sm font-medium text-gray-700">YouTube Channel ID</label>
-            <input
-              type="text"
-              value={channelId}
-              onChange={(e) => setChannelId(e.target.value)}
-              className="mt-1 block w-full border-gray-300 rounded-md shadow-sm text-black focus:border-indigo-500 focus:ring-0 focus:outline-none sm:text-sm"
-              placeholder="Enter your YouTube Channel ID"
-            />
-          </div>
           <button
             onClick={handleAuthorize}
             className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
